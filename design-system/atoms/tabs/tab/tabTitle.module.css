@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 45px;
+  cursor: pointer;
+  color: var(--color-white);
+  border-right: 2px solid var(--background-dark);
+}
+
+.selected {
+  background-color: var(--color-secondary);
+}

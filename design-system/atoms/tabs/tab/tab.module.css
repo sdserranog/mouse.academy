@@ -1,0 +1,5 @@
+.container {
+  padding: 32px;
+  background-color: var(--color-secondary);
+  color: var(--typography-body);
+}
