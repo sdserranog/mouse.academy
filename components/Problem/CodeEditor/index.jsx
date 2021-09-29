@@ -4,14 +4,14 @@ import styles from './code-editor.module.css'
 import editorOptions from './editorOptions'
 import Editor from '@monaco-editor/react'
 
-const CodeEditor = () => {
+const CodeEditor = ({ defaultCode }) => {
   return (
     <div className={styles.container}>
       <Editor
         theme="vs-dark"
         defaultLanguage="javascript"
         options={editorOptions}
-        defaultValue="function hello() {\n\talert('Hello world!');\n}"
+        defaultValue={defaultCode}
       />
     </div>
   )

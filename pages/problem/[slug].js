@@ -37,12 +37,12 @@ const Problem = ({ problem }) => {
         </div>
         <div className={styles['code-editor']}>
           <Card title="Solución">
-            <CodeEditor />
+            <CodeEditor defaultCode={problem.defaultCode} />
           </Card>
         </div>
         <div className={styles.tests}>
           <Card title="Tests">
-            <CodeEditor />
+            <CodeEditor defaultCode={problem.defaultTest} />
           </Card>
         </div>
       </main>
