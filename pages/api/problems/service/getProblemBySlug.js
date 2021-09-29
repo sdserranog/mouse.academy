@@ -1,4 +1,4 @@
-import { supabase } from 'utils/supabase'
+import { supabase } from 'pages/api/utils/supabase'
 
 export default async function getAllProblems(slug) {
   try {
