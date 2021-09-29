@@ -1,15 +1,14 @@
-import { client } from '../client'
+import { supabase } from 'services/utils/supabase'
 
 export default async function getAllProblems() {
   try {
-    const {
-      data: { problems },
-    } = await client.get('/problems')
+    let { data, error } = await supabase
+      .from('problem')
+      .select('id, slug, title, category_id')
+    if (error) throw new Error(error)
 
-    return problems
+    return data
   } catch (error) {
-    // TODO: Log error in reporting/alerting system
-    console.error(error)
-    throw error
+    throw new Error(error)
   }
 }
