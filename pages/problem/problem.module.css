@@ -1,0 +1,24 @@
+.main {
+  height: 100%;
+  display: grid;
+  grid-template-areas:
+    'description code'
+    'description tests';
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-rows: 2fr 1fr;
+  grid-gap: 24px;
+  padding: 24px;
+  background-color: var(--background-dark);
+}
+
+.description {
+  grid-area: description;
+}
+
+.code-editor {
+  grid-area: code;
+}
+
+.tests {
+  grid-area: tests;
+}
