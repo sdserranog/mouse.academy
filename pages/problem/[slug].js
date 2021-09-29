@@ -53,12 +53,6 @@ const Problem = ({ problem }) => {
 export default Problem
 
 export async function getStaticPaths() {
-  return {
-    paths: [{ params: { slug: 'hola' } }],
-    fallback: false,
-  }
-}
-/*
   try {
     const problems = await getAllProblems()
 
@@ -75,14 +69,8 @@ export async function getStaticPaths() {
     console.error(error)
   }
 }
-*/
+
 export async function getStaticProps({ params: { slug } }) {
-  return {
-    props: {
-      problem: { description: 'hola mundo' },
-    },
-  }
-  /*
   try {
     const problem = await getProblemBySlug(slug)
     return {
@@ -95,6 +83,4 @@ export async function getStaticProps({ params: { slug } }) {
       notFound: true,
     }
   }
-
-*/
 }

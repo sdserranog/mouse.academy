@@ -27,13 +27,6 @@ export default function Home({ categories, problems }) {
 }
 
 export async function getStaticProps() {
-  return {
-    props: {
-      categories: [{ name: 'hola', id: 1 }],
-      problems: [{ name: 'hola', id: 1, slug: 'hola' }],
-    },
-  }
-  /*
   try {
     const categories = await getAllCategories()
     const problems = await getAllProblems()
@@ -46,5 +39,4 @@ export async function getStaticProps() {
   } catch (e) {
     console.error(e)
   }
-  */
 }
