@@ -1,0 +1,57 @@
+:root {
+  /* Main Colors */
+  --color-primary: #e94560;
+  --color-primary-shade-1: #f8918f;
+  --color-primary-shade-2: #fde1da;
+
+  --color-secondary: #16213e;
+  --color-secondary-shade-1: #7892c5;
+  --color-secondary-shade-2: #d5e1f5;
+
+  --color-tertiary: #0f3460;
+  --color-tertiary-shade-1: #669fcf;
+  --color-tertiary-shade-2: #cde8f7;
+
+  /* Background Colors */
+  --background-light: #ffffff;
+  --background-dark: #1a1a2e;
+
+  /* Feedback Colors */
+  --color-info: #0094ff;
+  --color-info-shade-1: #66d0ff;
+  --color-info-shade-2: #ccf5ff;
+
+  --color-danger: #fc562d;
+  --color-danger-shade-1: #feac80;
+  --color-danger-shade-2: #fee9d4;
+
+  --color-warning: #ffe100;
+  --color-warning-shade-1: #fff066;
+  --color-warning-shade-2: #fffbcc;
+
+  --color-success: #5ee03a;
+  --color-success-shade-1: #b0f588;
+  --color-success-shade-2: #ebfdd7;
+
+  /* Gray scale  */
+  --color-white: #ffffff;
+
+  --gray-1: #f6f4f6;
+  --gray-2: #e7e6e8;
+  --gray-3: #dcdbde;
+  --gray-4: #c2c2c5;
+  --gray-5: #95979c;
+  --gray-6: #4d5259;
+  --gray-7: #393e46;
+
+  /* Breakpoints */
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --breakpoint-xxl: 1400px;
+
+  /* Typography */
+  --typography-body: var(--color-white);
+}
