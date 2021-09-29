@@ -1,0 +1,9 @@
+.monaco-editor .view-line,
+.monaco-editor .view-overlays,
+.monaco-editor .cursor {
+  margin-top: 10px;
+}
+
+.monaco-editor .margin {
+  margin-top: 10px;
+}
