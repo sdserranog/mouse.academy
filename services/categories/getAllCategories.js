@@ -10,6 +10,6 @@ export default async function getAllCategories() {
   } catch (error) {
     // TODO: Log error in reporting/alerting system
     console.error(error)
-    throw e
+    throw error
   }
 }
