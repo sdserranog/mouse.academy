@@ -1,0 +1,127 @@
+/* IMPORT FONT LOCAL */
+/* quicksand-v24-latin-700 - latin */
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./fonts/quicksand/quicksand-v24-latin-700.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('./fonts/quicksand/quicksand-v24-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* quicksand-v24-latin-regular - latin */
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 500;
+  src: url('./fonts/quicksand/quicksand-v24-latin-regular.woff2')
+      format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('./fonts/quicksand/quicksand-v24-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* FONT STYLE */
+.typography {
+  font-family: 'Quicksand', Arial, sans-serif;
+}
+
+/* FONT COLOR */
+.text-primary {
+  color: var(--color-primary);
+}
+.text-secondary {
+  color: var(--color-secondary);
+}
+.text-info {
+  color: var(--color-info);
+}
+.text-warning {
+  color: var(--color-warning);
+}
+.text-danger {
+  color: var(--color-danger);
+}
+.text-success {
+  color: var(--color-success);
+}
+.text-gray-1 {
+  color: var(--gray-1);
+}
+.text-gray-2 {
+  color: var(--gray-2);
+}
+.text-gray-3 {
+  color: var(--gray-3);
+}
+.text-gray-4 {
+  color: var(--gray-4);
+}
+.text-gray-5 {
+  color: var(--gray-5);
+}
+.text-gray-6 {
+  color: var(--gray-6);
+}
+.text-gray-7 {
+  color: var(--gray-7);
+}
+
+.text-theme-primary {
+  color: var(--text-theme-primary);
+}
+.text-theme-title {
+  color: var(--text-theme-title);
+}
+.text-theme-body {
+  color: var(--text-theme-body);
+}
+
+/* Font Size */
+.text-h1 {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+}
+.text-h2 {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 18px;
+}
+.text-h3 {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+}
+
+.text-body {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 14px;
+}
+.text-caption {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 10px;
+}
+.text-tiny {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 8px;
+}
+
+@media only screen and (max-width: 600px) {
+  .text-h1 {
+    font-size: 18px;
+  }
+  .text-h2 {
+    font-size: 16px;
+  }
+  .text-h3 {
+    font-size: 14px;
+  }
+  .text-body {
+    font-size: 12px;
+  }
+  .text-caption {
+    font-size: 8px;
+  }
+}
