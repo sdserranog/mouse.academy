@@ -1,0 +1,62 @@
+/* 
+* BUTTON
+*/
+.btn {
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Type of the button */
+.btn.medium {
+  height: 40px;
+}
+.btn.small {
+  height: 32px;
+}
+.btn.large {
+  height: 48px;
+}
+
+/* Color of the button */
+/* Primary */
+.btn.primary {
+  background: var(--color-primary);
+  color: var(--color-white);
+  outline: none;
+}
+.btn.primary:hover,
+.btn.primary:focus,
+.btn.primary:active {
+  background: var(--color-primary-shade-2);
+}
+.btn.primary .disabled {
+  background: var(--color-primary-shade-1);
+  color: var(--gray-5);
+}
+/* Secondary */
+.btn.secondary {
+  background: var(--color-secondary);
+  color: var(--gray-1);
+}
+.btn.secondary:hover,
+.btn.secondary:focus,
+.btn.secondary:active {
+  background: transparent;
+  border: 2px solid var(--color-border-button-hover);
+  color: var(--color-secondary);
+}
+.btn.secondary .disabled {
+  background: var(--gray-5);
+  color: var(--gray-1);
+}
+
+@media only screen and (max-width: 600px) {
+  .btn.large {
+    height: 40px;
+  }
+}

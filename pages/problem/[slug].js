@@ -36,7 +36,13 @@ const Problem = ({ problem }) => {
           </Tabs>
         </div>
         <div className={styles['code-editor']}>
-          <Card title="Solución">
+          <Card
+            title="Solución"
+            buttonTitle="Testear"
+            buttonOnClick={() => {
+              console.log('Testear')
+            }}
+          >
             <CodeEditor defaultCode={problem.defaultCode} />
           </Card>
         </div>
