@@ -5,5 +5,12 @@
 }
 
 .monaco-editor .margin {
-  margin-top: 10px;
+  padding-top: 10px;
+  background-color: var(--color-secondary) !important;
+}
+
+.monaco-editor,
+.monaco-editor-background,
+.monaco-editor .inputarea.ime-input {
+  background-color: var(--color-secondary) !important;
 }
