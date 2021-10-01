@@ -9,12 +9,12 @@ const editorOptions = {
     horizontalHasArrows: true,
     // set scrollbar hidden
     vertical: 'hidden',
-    horizontal: 'hidden',
 
     verticalScrollbarSize: 0,
     horizontalScrollbarSize: 17,
     arrowSize: 30,
   },
+  renderLineHighlight: 'none',
 }
 
 export default editorOptions

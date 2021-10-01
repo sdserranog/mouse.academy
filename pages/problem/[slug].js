@@ -28,7 +28,7 @@ const Problem = ({ problem }) => {
               <Description description={problem.description} />
             </Tab>
             <Tab title="Solución">
-              <CodeEditor />
+              <CodeEditor readOnly={true} />
             </Tab>
             <Tab title="Explicación">
               <Description description={problem.description} />
