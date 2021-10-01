@@ -14,3 +14,10 @@
 .monaco-editor .inputarea.ime-input {
   background-color: var(--color-secondary) !important;
 }
+
+.monaco-editor,
+.monaco-editor .inputarea.ime-input,
+.monaco-editor .overflow-guard {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}

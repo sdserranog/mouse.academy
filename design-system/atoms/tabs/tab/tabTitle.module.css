@@ -12,3 +12,7 @@
 .selected {
   background-color: var(--color-secondary);
 }
+
+.selected:first-child {
+  border-top-left-radius: 10px;
+}
