@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './tab.module.css'
 
 const Tab = ({ children }) => {
-  return <div className={styles.container}>{children}</div>
+  return <article className={styles.container}>{children}</article>
 }
 
 export default Tab

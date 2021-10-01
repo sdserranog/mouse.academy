@@ -1,14 +1,21 @@
+import { Button } from 'design-system/atoms/button'
+import { Typography } from 'design-system/atoms/typography'
 import React from 'react'
 import styles from './card.module.css'
 
-const Card = ({ title, children }) => {
+const Card = ({ title, buttonTitle, buttonOnClick, children }) => {
   return (
-    <div className={styles.container}>
+    <section className={styles.container}>
       <div className={styles.header}>
-        <span>{title}</span>
+        <Typography>{title}</Typography>
+        {buttonTitle && (
+          <Button type="small" onClick={buttonOnClick}>
+            {buttonTitle}
+          </Button>
+        )}
       </div>
       {children}
-    </div>
+    </section>
   )
 }
 

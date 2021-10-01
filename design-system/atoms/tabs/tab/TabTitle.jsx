@@ -1,3 +1,4 @@
+import { Typography } from 'design-system/atoms/typography'
 import React from 'react'
 import styles from './tabTitle.module.css'
 
@@ -7,16 +8,16 @@ const Tab = ({ title, setSelectedTab, index, active }) => {
   }
 
   return (
-    <li
-      role="button"
-      tabIndex="0"
+    <a
+      aria-controls={title}
+      role="tab"
       className={`${styles.container} ${
         active === index ? styles.selected : ''
       }`}
       onClick={onClick}
     >
-      {title}
-    </li>
+      <Typography>{title}</Typography>
+    </a>
   )
 }
 

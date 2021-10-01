@@ -5,8 +5,13 @@
 }
 
 .header {
-  width: 100%;
-  padding: 20px 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 55px;
+  min-height: 48px;
   color: var(--color-white);
   background-color: var(--color-tertiary);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }

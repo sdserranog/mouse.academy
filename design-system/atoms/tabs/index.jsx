@@ -8,7 +8,7 @@ const Tabs = ({ children }) => {
 
   return (
     <>
-      <ul className={styles.container}>
+      <nav role="tablist" className={styles.container}>
         {children.map((item, index) => (
           <TabTitle
             key={index}
@@ -18,7 +18,7 @@ const Tabs = ({ children }) => {
             active={selectedTab}
           />
         ))}
-      </ul>
+      </nav>
       {children[selectedTab]}
     </>
   )
